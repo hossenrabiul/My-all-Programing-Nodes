@@ -1,0 +1,32 @@
+1. Install Mysql
+
+2.run This command to install python connector "mysql-connector."
+
+2. run this command line in your terminal-  "mysql -u root -p",->  It will ask for the password. Enter the password you set during MySQL installation.
+
+3. Run this command to create a database- "CREATE DATABASE my_project_db CHARACTER SET UTF8MB4 COLLATE utf8mb4_general_ci" -> [Replace my_project_db with your actual project name]
+4.To comfirmed whether it was created or not, run this command "SHOW DATABASE"
+
+5. exit the Mysql, to exit write "exit" or "quite"
+
+5.In your Django project’s settings.py file, update the DATABASES setting:
+    DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'my_project_db',   # Replace with your project's name
+        'USER': 'root',   # Replace with your MySQL's user name
+        'PASSWORD': 'your_password',   # Replace with your MySQL's password
+        'HOST': 'localhost',  # Replace with your Host name
+        'PORT': '3306',  # Replace with your port number
+    }
+}
+
+6. run "python manage.py makemigrations"  and  "python manage.py migrate"
+
+
+
+
+
+
+
+
