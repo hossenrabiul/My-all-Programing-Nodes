@@ -1,0 +1,3 @@
+to Create -- python -m venv venv_name
+to Activate -- source env/Scripts/activate
+to stop -- deactivate
